@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.full-wraper {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* =============
+ Common Css Ends
+============== */
+
+/*=====================
+ Import Font Css Start
+==================*/
+
+
+@font-face {
+    font-family: 'lato-light';
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: 'lato-black-ita';
+    src: url(../fonts/Lato-BlackItalic.ttf);
+}
+
+
+@font-face {
+    font-family: 'oswald-bold';
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+
+
+
+
+/*====================
+ Import Font Css Ends
+==================*/
+
+/* Navbar Start */
+
+.navbar-bg .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.navbar-bg .navbar .nav-menu a {
+    font-family: 'lato-black-ita';
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 50px;
+    color: #fefeff;
+    transition: all linear .2s;
+}
+
+.navbar-bg .navbar .nav-menu a:hover {
+    color: #414f6b;
+}
+
+/* Navbar Ends */
+
+/* Banner Starts */
+.banner-bg {
+    background: url(../images/banner.jpg) no-repeat;
+    height: 825px;
+    background-size: cover;
+    background-position: unset;
+}
+
+/* Banner Ends */
+
+
+/* Navbar Start */
+
+.div-nav-bg .div-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    padding-left: 20px;
+}
+
+
+.div-nav-bg .div-nav .div-nav-menu a {
+    font-family: 'lato-black-ita';
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 50px;
+    color: #414f6b;
+    transition: all linear .2s;
+}
+
+
+.div-nav-bg .div-nav .div-nav-menu a:hover {
+    color: #b0b4be;
+}
+
+/* Navbar Ends */
+
+
+/* History Starts */
+
+.history-bg {
+    background: url(../images/history-bg.jpg) no-repeat center / cover;
+    height: 705px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.history-bg .history h2 {
+    font-family: 'oswald-bold';
+    text-transform: uppercase;
+    font-size: 135px;
+    display: flex;
+    align-items: center;
+    color: #76859e;
+}
+
+.history-bg .history h2 span {
+    font-size: 32px;
+    margin-top: 35px;
+    position: relative;
+    color: #414f6b;
+}
+
+.history-bg .history h2 span::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #76859e;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.history-bg .history p {
+    font-family: 'lato-light';
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 60px;
+    margin-top: -35px;
+}
+
+.history-bg .history-slider {
+    margin-top: auto;
+    background: rgba(65, 79, 107, 0.4);
+    padding: 20px;
+    padding-bottom: 35px;
+}
+
+.history-bg .history-slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    display: flex;
+    padding-left: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.history-bg .history-slider button {
+    font-size: 0;
+    outline: none;
+    border: none;
+}
+
+.history-bg .history-slider .slick-dots li {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #636d81;
+}
+
+.history-bg .history-slider .slick-dots .slick-active {
+    background: #fff;
+}
+
+/* History Ends */
+
+/* Climb Starts */
+
+.climb-bg {
+    height: 180px;
+}
+
+.climb-bg .climb {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.climb-bg .climb h2 {
+    font-family: 'oswald-bold';
+    text-transform: uppercase;
+    font-size: 135px;
+    display: flex;
+    align-items: center;
+    color: #b0b4be;
+}
+
+.climb-bg .climb h2 span {
+    font-size: 32px;
+    margin-top: 35px;
+    position: relative;
+    color: #414f6b;
+}
+
+.climb-bg .climb h2 span::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #b0b4be;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.climb-bg .climb p {
+    font-family: 'lato-light';
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 35px;
+}
+
+/* Climb Ends */
+
+/* Mountain Starts */
+
+.mountain-bg {
+    height: 585px;
+}
+
+.mountain-bg .mountain-nav {
+    background: #414f6b;
+}
+
+.mountain-bg .mountain-nav .tab ul {
+    display: flex;
+}
+
+.mountain-bg .mountain-nav .tab ul li {
+    padding: 5px 0;
+}
+
+.mountain-bg .mountain-nav .tab ul li a {
+    font-family: 'oswald-bold';
+    font-size: 20px;
+    color: #b0b4be;
+    display: block;
+    padding: 0 20px;
+}
+
+.mountain-bg .mountain-nav .tab ul li.active {
+    background: #b0b4be;
+    text-decoration: underline;
+}
+
+.mountain-bg .mountain-nav .tab ul li.active a {
+    color: #414f6b;
+}
+
+.mountain-bg .mountain-text {
+    background: url(../images/tab-1.jpg) no-repeat center / cover;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.mountain-bg .mountain-text .schedule-box {
+    width: 355px;
+    height: 230px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.mountain-bg .mountain-text .schedule-box h3 {
+    font-family: 'oswald-bold';
+    font-size: 32px;
+    color: #414f6b;
+    margin-bottom: 20px;
+}
+
+.mountain-bg .mountain-text .schedule-box .list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mountain-bg .mountain-text .schedule-box .list-item li {
+    font-family: 'lato-light';
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.mountain-bg .mountain-text .schedule-box .list-item li.space {
+    margin: 35px 0;
+}
+
+/* Mountain Ends */
+
+
+/* Footer Starts */
+
+.footer-bg {
+    background: #414f6b;
+}
+
+.footer-bg .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 16px 20px;
+}
+
+.footer-bg .footer .footer-text p {
+    font-family: 'lato-black-ita';
+    font-size: 12px;
+    color: #63769d;
+}
+
+/* Footer Ends */
